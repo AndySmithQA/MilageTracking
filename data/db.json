@@ -1,0 +1,112 @@
+{
+  "months": [
+    {
+      "currentMonth": "Jan-23",
+      "max": 667,
+      "actual": 600,
+      "percentage": 90,
+      "difference": 67,
+      "monthlyMilage": 600,
+      "id": 1
+    },
+    {
+      "currentMonth": "Mar-23",
+      "max": 1333,
+      "actual": 1023,
+      "percentage": 76.73,
+      "difference": 310,
+      "monthlyMilage": 423,
+      "id": 2
+    },
+    {
+      "currentMonth": "Apr-23",
+      "max": 2000,
+      "actual": 1767,
+      "percentage": 88.35,
+      "difference": 233,
+      "monthlyMilage": 744,
+      "id": 3
+    },
+    {
+      "currentMonth": "May-23",
+      "max": 2667,
+      "actual": 2282,
+      "percentage": 85.58,
+      "difference": 385,
+      "monthlyMilage": 515,
+      "id": 4
+    },
+    {
+      "currentMonth": "Jun-23",
+      "max": 3333,
+      "actual": 3100,
+      "percentage": 93,
+      "difference": 233,
+      "monthlyMilage": 818,
+      "id": 5
+    },
+    {
+      "currentMonth": "Jul-23",
+      "max": 4000,
+      "actual": 3749,
+      "percentage": 93.73,
+      "difference": 251,
+      "monthlyMilage": 649,
+      "id": 6
+    },
+    {
+      "currentMonth": "Aug-23",
+      "max": 4667,
+      "actual": 4262,
+      "percentage": 91.33,
+      "difference": 405,
+      "monthlyMilage": 513,
+      "id": 7
+    },
+    {
+      "currentMonth": "Sep-23",
+      "max": 5333,
+      "actual": 5159,
+      "percentage": 96.73,
+      "difference": 174,
+      "monthlyMilage": 897,
+      "id": 8
+    },
+    {
+      "currentMonth": "Oct-23",
+      "max": 6000,
+      "actual": 5502,
+      "percentage": 91.7,
+      "difference": 498,
+      "monthlyMilage": 343,
+      "id": 9
+    },
+    {
+      "currentMonth": "Nov-23",
+      "max": 6667,
+      "actual": 6253,
+      "percentage": 93.8,
+      "difference": 414,
+      "monthlyMilage": 751,
+      "id": 10
+    },
+    {
+      "currentMonth": "Dec-23",
+      "max": 7333,
+      "actual": 7034,
+      "percentage": 95.92,
+      "difference": 299,
+      "monthlyMilage": 781,
+      "id": 11
+    },
+    {
+      "currentMonth": "Jan-24",
+      "max": 8000,
+      "actual": 7828,
+      "percentage": 97.85,
+      "difference": 172,
+      "monthlyMilage": 794,
+      "id": 12
+    }
+  ]
+}
