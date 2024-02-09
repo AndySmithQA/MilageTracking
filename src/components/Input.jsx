@@ -21,8 +21,9 @@ export default function Input(){
         const percentage = (actual/max *100).toFixed(2)
         const difference = (max - actual)
         const monthlyMilage = (actual - calcData[calcData.length - 1].actual);
+        const maxAllowance = 666
         
-        const record = {currentMonth, max, actual, percentage, difference, monthlyMilage}
+        const record = {currentMonth, max, actual, percentage, difference, monthlyMilage, maxAllowance}
 
         fetch('http://localhost:3001/months', {
                 method: 'POST',

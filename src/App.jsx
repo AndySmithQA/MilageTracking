@@ -2,6 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './components/Navbar';
 import BuildTable from './components/table';
 import ShowGraph from './components/BuildGraph';
+import ShowBarGraph from './components/BuildBarChart';
 import Input from './components/Input';
 import './App.css'
 
@@ -28,6 +29,10 @@ function App() {
             </div>
             <div className="col-md-6 offset-1">
               <ShowGraph />
+              <div className="row pt-4">
+              <ShowBarGraph />
+              </div>
+              
             </div>
           </div>
         </div>

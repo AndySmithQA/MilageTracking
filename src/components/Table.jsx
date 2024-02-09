@@ -4,7 +4,7 @@ import { Table } from 'react-bootstrap';
 export default function BuildTable(){
     const [rows, setRows] = useState([ ])
 
-   useEffect(() => {
+    useEffect(() => {
         (async function fetchData() {
         const response = await fetch("http://localhost:3001/months")
         .catch(error => {

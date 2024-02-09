@@ -14,8 +14,8 @@ export default function ShowGraph(){
             labels: data.map((month) => month.currentMonth),
             datasets: [
                 {
-                    label: "Maximum Allowed",
-                    yAxisID: 'times',
+                    label: "Monthly Milage",
+                    yAxisID: 'milage',
                     data: data.map((month) => month.max),
                     backgroundColor: [
                         "black"
@@ -25,7 +25,7 @@ export default function ShowGraph(){
                 },
                 {
                     label: "Actual Milage",
-                    yAxisID: 'times',
+                    yAxisID: 'milage',
                     data: data.map((month) => month.actual),
                     backgroundColor: [
                         "red"
@@ -35,7 +35,7 @@ export default function ShowGraph(){
                 },
                 {
                     label: "Percentage",
-                    yAxisID: "hr",
+                    yAxisID: "percentage",
                     data: data.map((month) => month.percentage),
                     borderColor: "Blue",
                     backgroundColor: [

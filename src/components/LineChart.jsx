@@ -13,7 +13,7 @@ function LineChart({ chartData }) {
             }
           },
           scales: {
-            times:{
+            milage:{
               type: 'linear',
               position: "left",
               title: {
@@ -22,7 +22,7 @@ function LineChart({ chartData }) {
               }, 
               suggestedMax: 10000
             },
-            hr:{
+            percentage:{
               type: 'linear',
               position: 'right',
               title: {
