@@ -27,7 +27,9 @@ export default function BuildTable(){
                             <td>{row.actual}</td>
                             <td>{row.percentage}</td>
                             <td>{row.difference}</td>
-                            <td>{row.monthlyMilage}</td>
+                            <td style={{color: row.monthlyMilage > 666 ? "red" : "inherit"}}>
+                                {row.monthlyMilage}
+                            </td>
                         </tr>
                     )}
                 </tbody>

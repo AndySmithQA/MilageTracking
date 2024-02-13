@@ -39,7 +39,7 @@ export default function ShowGraph(){
                     label: "Percentage",
                     yAxisID: "percentage",
                     data: data.map((month) => month.percentage),
-                    borderColor: "Blue",
+                    borderColor: "#0D392E",
                     backgroundColor: [
                         "Blue"
                     ],

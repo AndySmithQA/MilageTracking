@@ -26,9 +26,9 @@ export default function Stats(){
                 <div className="row align-items-centre">
                     <div className="col-md-12">
                         <ul>
-                            <li>Highest Mothly Milage - {maximum}</li>
-                            <li>Lowest Mothly Milage - {minimum}</li>
-                            <li>Average Mothly Milage - {average.toFixed()}</li>
+                            <li>Highest Monthly Mileage - {maximum}</li>
+                            <li>Lowest Monthly Mileage - {minimum}</li>
+                            <li>Average Monthly Mileage - {average.toFixed()}</li>
                         </ul>
                 </div>
                 </div>
