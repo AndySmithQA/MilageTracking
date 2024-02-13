@@ -1,4 +1,4 @@
-import { useEffect,useState} from 'react'
+import { useState} from 'react'
 import useTable from './useTable'
 import { Table } from 'react-bootstrap';
 
@@ -25,7 +25,7 @@ export default function BuildTable(){
                             <td>{row.currentMonth}</td>
                             <td>{row.max}</td>
                             <td>{row.actual}</td>
-                            <td>{row.percentage.toFixed(2)}</td>
+                            <td>{row.percentage}</td>
                             <td>{row.difference}</td>
                             <td>{row.monthlyMilage}</td>
                         </tr>
