@@ -4,6 +4,7 @@ import BuildTable from './components/table';
 import ShowGraph from './components/BuildGraph';
 import ShowBarGraph from './components/BuildBarChart';
 import Input from './components/Input';
+import Stats from './components/Stats';
 import './App.css'
 
 function App() {
@@ -21,12 +22,24 @@ function App() {
           </div>
         </div>
       </div>
+      <div className="grid">
+          <div className="row align-items-centre">
+            <div className="col-md-12 input-box p-3">
+              <Stats />
+            </div>
+          </div>
+        </div>
+     
+      
+      {/* Body */}
       <div className="container">
         <div className="grid">
           <div className="row align-items-centre">
+            {/* Left Panel */}
             <div className="col-md-5">
               <BuildTable />
             </div>
+            {/* Left Panel */}
             <div className="col-md-6 offset-1">
               <ShowGraph />
               <div className="row pt-4">

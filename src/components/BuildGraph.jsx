@@ -21,7 +21,8 @@ export default function ShowGraph(){
                         "black"
                     ],
                     borderColor: "black",
-                    borderWidth: 2
+                    borderWidth: 2,
+                    pointRadius: 0
                 },
                 {
                     label: "Actual Milage",
@@ -31,7 +32,8 @@ export default function ShowGraph(){
                         "red"
                     ],
                     borderColor: "red",
-                    borderWidth: 2
+                    borderWidth: 2,
+                    pointRadius: 0
                 },
                 {
                     label: "Percentage",
@@ -41,7 +43,8 @@ export default function ShowGraph(){
                     backgroundColor: [
                         "Blue"
                     ],
-                    borderWidth: 2
+                    borderWidth: 2,
+                    pointRadius: 0
                 }
             ]
         });

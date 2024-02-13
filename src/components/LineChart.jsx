@@ -20,7 +20,7 @@ function LineChart({ chartData }) {
                 display: true,
                 text: "Milage"
               }, 
-              suggestedMax: 10000
+              suggestedMax: 15000
             },
             percentage:{
               type: 'linear',
@@ -29,7 +29,8 @@ function LineChart({ chartData }) {
                 display: true,
                 text: "Percentage"
               },
-              min:10
+              min:10,
+              
             }
           }
         }
