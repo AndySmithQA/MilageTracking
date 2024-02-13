@@ -24,12 +24,13 @@ export default function Stats(){
         <div className="stats-bar ">
             <div className="container">
                 <div className="row align-items-centre">
-                    <ul>
-                        <li>Highest Mothly Milage - {maximum}</li>
-                        <li>Lowest Mothly Milage - {minimum}</li>
-                        <li>Average Mothly Milage - {average.toFixed()}</li>
-                    </ul>
-                
+                    <div className="col-md-12">
+                        <ul>
+                            <li>Highest Mothly Milage - {maximum}</li>
+                            <li>Lowest Mothly Milage - {minimum}</li>
+                            <li>Average Mothly Milage - {average.toFixed()}</li>
+                        </ul>
+                </div>
                 </div>
             </div>
       </div>  

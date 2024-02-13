@@ -1,3 +1,9 @@
+
+html, body{
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 :root {
   --primary : #0D392E;
   --secondary : #CED7E5;
