@@ -49,9 +49,8 @@ button{
 .stats-bar li {
   display: inline-block;
   text-decoration: none;
-  padding: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 10px 20px;
+
 }
 
 
