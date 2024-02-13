@@ -4,7 +4,7 @@ export default function useFetch(url, supplied) {
 
     useEffect(() => {
         (async function fetchData() {
-        const response = await fetch("http://localhost:3001/months")
+        const response = await fetch(url)
         .catch(error => {
             console.error("[ERROR] Cannot fetch because", error);
             if (error.toString().includes("NetworkError")) {

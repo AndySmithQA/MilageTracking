@@ -4,10 +4,7 @@ import  useFetch  from './useFetch'
 export default function Input(){
     const [calcData, setCalcData] = useState([])
     const [currentMonth, setCurrentMonth] = useState('')
-    const [max, setMax] = useState()
     const [actual, setActual] = useState()
-    const [percentage, setPercentage] = useState()
-    const [difference, setDifference] = useState()
 
     useFetch("http://localhost:3001/months", setCalcData)
     

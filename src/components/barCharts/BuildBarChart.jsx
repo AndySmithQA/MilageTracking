@@ -1,6 +1,6 @@
 import Chart from "chart.js/auto";
 import {CategoryScale} from "chart.js";
-import useFetch from './useFetch'
+import useFetch from '../useFetch'
 import BarChart from "./BarChart";
 import { useState } from "react";
 
