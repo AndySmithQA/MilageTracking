@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import  useCalc  from './useCalc'
+import  useFetch  from './useFetch'
 
 export default function Input(){
     const [calcData, setCalcData] = useState([])
@@ -9,7 +9,7 @@ export default function Input(){
     const [percentage, setPercentage] = useState()
     const [difference, setDifference] = useState()
 
-    useCalc("http://localhost:3001/months", setCalcData)
+    useFetch("http://localhost:3001/months", setCalcData)
     
     const handleSubmit = async (event) =>{
         if (!actual | !currentMonth) {

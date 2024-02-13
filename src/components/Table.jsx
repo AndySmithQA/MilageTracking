@@ -1,12 +1,12 @@
 import { useState} from 'react'
-import useTable from './useTable'
+import useFetch from './useFetch'
 import { Table } from 'react-bootstrap';
 
 export default function BuildTable(){
     const [rows, setRows] = useState([])
 
-    useTable("http://localhost:3001/months", setRows)
-    
+    useFetch("http://localhost:3001/months", setRows)
+
     return (
        <Table striped hover>
             <thead>
