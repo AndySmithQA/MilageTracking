@@ -18,9 +18,9 @@ export default function ShowGraph(){
                     yAxisID: 'milage',
                     data: data.map((month) => month.max),
                     backgroundColor: [
-                        "black"
+                        "blue"
                     ],
-                    borderColor: "black",
+                    borderColor: "blue",
                     borderWidth: 2,
                     pointRadius: 0
                 },
@@ -41,7 +41,7 @@ export default function ShowGraph(){
                     data: data.map((month) => month.percentage),
                     borderColor: "#0D392E",
                     backgroundColor: [
-                        "Blue"
+                        "#0D392E"
                     ],
                     borderWidth: 2,
                     pointRadius: 0

@@ -11,26 +11,92 @@ export default function ShowBarGraph(){
     const [chartData, setChartData] = useState(null);
     
    
-    const initChartData = (data) => {
-        const year1 = data.filter((month) => month.currentMonth.includes("-23"));
-        const year2 = data.filter((month) => month.currentMonth.includes("-24"));
+//     const initChartData = (data) => {
+//         const year1 = data.filter((month) => month.currentMonth.includes("-23"));
+//         const year2 = data.filter((month) => month.currentMonth.includes("-24"));
+
+//         const first12Elements = chartData.datasets.slice(0, 12);
+        
+
+//         setChartData({
+//             labels: year1.map((month) => month.currentMonth),
+//             datasets: [{
+//                 type: 'bar',
+//                 label: "Year 1",
+//                 data: year1.map((month) => month.monthlyMilage),
+//                 backgroundColor: "#0D392E",
+//                order: 2,
+//                 stack: 0
+//             },
+//              {
+//                  type: 'bar',
+//                  label: "Year 2",
+//                  data: year2.map((month) => month.monthlyMilage),
+//                  backgroundColor: "#CED7E5",
+//                  order: 2,
+//                  stack: 1
+//             },
+//             {
+//                 type: "line",
+//                 label: "Max Allowance",
+//                 data: data.map((month) => month.maxAllowance),
+//                 order: 1,
+//                 backgroundColor: "red",
+//                 borderColor: "red",
+//                 pointRadius: 0
+//             }
+//         ]
+//         });
+        
+//     };
+    
+    
+
+//     useFetch("http://localhost:3001/months", initChartData);
+    
+    
+
+//     return (
+//         <div className="App">
+//             {chartData && <BarChart chartData={chartData}/>}
+//         </div>
+//     );
+// }
+    
+    
+
+   
+
+
+const initChartData = (data) => {
+    
+        
+        const year1 = data.slice(0, 12);
+        console.log(year1);
+        const monthOnly = year1.map((month) => month.currentMonth.split("-")[0]);
+        console.log(monthOnly);
+
+        const year2 = data.slice(12, 23);
+        console.log(year2);
+
+
         setChartData({
-            labels: year1.map((month) => month.currentMonth),
+            labels: monthOnly,
             datasets: [{
                 type: 'bar',
                 label: "Year 1",
                 data: year1.map((month) => month.monthlyMilage),
                 backgroundColor: "#0D392E",
-               order: 2,
-                stack: 0
+                order: 2,
+                stack: 1
             },
-             {
-                 type: 'bar',
-                 label: "Year 2",
-                 data: year2.map((month) => month.monthlyMilage),
-                 backgroundColor: "#CED7E5",
-                 order: 2,
-                 stack: 1
+            {
+                type: 'bar',
+                label: "Year 2",
+                data: year2.map((month) => month.monthlyMilage),
+                backgroundColor: "#CED7E5",
+                order: 2,
+                stack: 0
             },
             {
                 type: "line",
@@ -58,51 +124,3 @@ export default function ShowBarGraph(){
         </div>
     );
 }
-    
-    
-
-//     const initChartData = (data) => {
-//         setChartData({
-//             labels: data.map((month) => month.currentMonth),
-//             datasets: [{
-//                 type: 'bar',
-//                 label: "Monthly usage",
-//                 data: data.map((month) => month.monthlyMilage),
-//                 backgroundColor: "#0D392E",
-//                 order: 2,
-//                 //stack: 0
-//             },
-//             // {
-//             //     type: 'bar',
-//             //     label: "Monthly usage",
-//             //     data: data.map((month) => month.monthlyMilage),
-//             //     backgroundColor: "#0D392E",
-//             //     order: 2,
-//             //     stack: 1
-//             // },
-//             {
-//                 type: "line",
-//                 label: "Max Allowance",
-//                 data: data.map((month) => month.maxAllowance),
-//                 order: 1,
-//                 backgroundColor: "red",
-//                 borderColor: "red",
-//                 pointRadius: 0
-//             }
-//         ]
-//         });
-        
-//     };
-    
-    
-
-//     useFetch("http://localhost:3001/months", initChartData);
-    
-    
-
-//     return (
-//         <div className="App">
-//             {chartData && <BarChart chartData={chartData}/>}
-//         </div>
-//     );
-// }
