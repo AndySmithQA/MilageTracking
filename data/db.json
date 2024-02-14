@@ -1,12 +1,13 @@
 {
   "months": [
     {
-      "currentMonth": "Jan-23",
+      "currentMonth": "Feb-23",
       "max": 667,
       "actual": 600,
       "percentage": 90,
       "difference": 67,
       "monthlyMilage": 600,
+      "maxAllowance": 666,
       "id": 1
     },
     {
@@ -16,6 +17,7 @@
       "percentage": 76.73,
       "difference": 310,
       "monthlyMilage": 423,
+      "maxAllowance": 666,
       "id": 2
     },
     {
@@ -25,6 +27,7 @@
       "percentage": 88.35,
       "difference": 233,
       "monthlyMilage": 744,
+      "maxAllowance": 666,
       "id": 3
     },
     {
@@ -34,6 +37,7 @@
       "percentage": 85.58,
       "difference": 385,
       "monthlyMilage": 515,
+      "maxAllowance": 666,
       "id": 4
     },
     {
@@ -43,6 +47,7 @@
       "percentage": 93,
       "difference": 233,
       "monthlyMilage": 818,
+      "maxAllowance": 666,
       "id": 5
     },
     {
@@ -52,6 +57,7 @@
       "percentage": 93.73,
       "difference": 251,
       "monthlyMilage": 649,
+      "maxAllowance": 666,
       "id": 6
     },
     {
@@ -61,6 +67,7 @@
       "percentage": 91.33,
       "difference": 405,
       "monthlyMilage": 513,
+      "maxAllowance": 666,
       "id": 7
     },
     {
@@ -70,6 +77,7 @@
       "percentage": 96.73,
       "difference": 174,
       "monthlyMilage": 897,
+      "maxAllowance": 666,
       "id": 8
     },
     {
@@ -79,6 +87,7 @@
       "percentage": 91.7,
       "difference": 498,
       "monthlyMilage": 343,
+      "maxAllowance": 666,
       "id": 9
     },
     {
@@ -88,6 +97,7 @@
       "percentage": 93.8,
       "difference": 414,
       "monthlyMilage": 751,
+      "maxAllowance": 666,
       "id": 10
     },
     {
@@ -97,6 +107,7 @@
       "percentage": 95.92,
       "difference": 299,
       "monthlyMilage": 781,
+      "maxAllowance": 666,
       "id": 11
     },
     {
@@ -106,7 +117,18 @@
       "percentage": 97.85,
       "difference": 172,
       "monthlyMilage": 794,
+      "maxAllowance": 666,
       "id": 12
+    },
+    {
+      "currentMonth": "Feb-24",
+      "max": 8666,
+      "actual": "8482",
+      "percentage": "97.88",
+      "difference": 184,
+      "monthlyMilage": 654,
+      "maxAllowance": 666,
+      "id": 13
     }
   ]
 }

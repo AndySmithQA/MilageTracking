@@ -1,34 +1,11 @@
-import { useEffect,useState} from 'react'
+import { useState} from 'react'
+import useFetch from './useFetch'
 import { Table } from 'react-bootstrap';
 
 export default function BuildTable(){
-    const [rows, setRows] = useState([ ])
+    const [rows, setRows] = useState([])
 
-   useEffect(() => {
-        (async function fetchData() {
-        const response = await fetch("http://localhost:3001/months")
-        .catch(error => {
-            console.error("[ERROR] Cannot fetch because", error);
-            if (error.toString().includes("NetworkError")) {
-                throw new Error("NETWORK_ERROR");
-            } else {
-                throw new Error("SYSTEM_ERROR");
-            }
-        });
-
-        if (response.ok) {
-            try {
-                const jsonData = await response.json();
-                setRows(jsonData);
-                
-                
-            } catch (e) {
-                console.warn("[WARN] Error while parsing content.  Likely because of empty body.", e);
-                throw new Error("SYSTEM_ERROR");
-            }
-        }
-    })();
-    }, []);
+    useFetch("http://localhost:3001/months", setRows)
 
     return (
        <Table striped hover>
@@ -50,7 +27,9 @@ export default function BuildTable(){
                             <td>{row.actual}</td>
                             <td>{row.percentage}</td>
                             <td>{row.difference}</td>
-                            <td>{row.monthlyMilage}</td>
+                            <td style={{color: row.monthlyMilage > 666 ? "red" : "inherit"}}>
+                                {row.monthlyMilage}
+                            </td>
                         </tr>
                     )}
                 </tbody>

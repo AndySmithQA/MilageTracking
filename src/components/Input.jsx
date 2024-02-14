@@ -1,15 +1,12 @@
 import { useState } from 'react'
-import  useCalc  from './useCalc'
+import  useFetch  from './useFetch'
 
 export default function Input(){
     const [calcData, setCalcData] = useState([])
     const [currentMonth, setCurrentMonth] = useState('')
-    const [max, setMax] = useState()
     const [actual, setActual] = useState()
-    const [percentage, setPercentage] = useState()
-    const [difference, setDifference] = useState()
 
-    useCalc("http://localhost:3001/months", setCalcData)
+    useFetch("http://localhost:3001/months", setCalcData)
     
     const handleSubmit = async (event) =>{
         if (!actual | !currentMonth) {
@@ -21,8 +18,9 @@ export default function Input(){
         const percentage = (actual/max *100).toFixed(2)
         const difference = (max - actual)
         const monthlyMilage = (actual - calcData[calcData.length - 1].actual);
+        const maxAllowance = 666
         
-        const record = {currentMonth, max, actual, percentage, difference, monthlyMilage}
+        const record = {currentMonth, max, actual, percentage, difference, monthlyMilage, maxAllowance}
 
         fetch('http://localhost:3001/months', {
                 method: 'POST',

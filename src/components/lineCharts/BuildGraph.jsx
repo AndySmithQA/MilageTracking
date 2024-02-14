@@ -1,6 +1,6 @@
 import Chart from "chart.js/auto";
 import {CategoryScale} from "chart.js";
-import useFetch from './useFetch'
+import useFetch from '../useFetch'
 import LineChart from "./LineChart";
 import { useState } from "react";
 
@@ -14,34 +14,37 @@ export default function ShowGraph(){
             labels: data.map((month) => month.currentMonth),
             datasets: [
                 {
-                    label: "Maximum Allowed",
-                    yAxisID: 'times',
+                    label: "Monthly Milage",
+                    yAxisID: 'milage',
                     data: data.map((month) => month.max),
                     backgroundColor: [
-                        "black"
+                        "blue"
                     ],
-                    borderColor: "black",
-                    borderWidth: 2
+                    borderColor: "blue",
+                    borderWidth: 2,
+                    pointRadius: 0
                 },
                 {
                     label: "Actual Milage",
-                    yAxisID: 'times',
+                    yAxisID: 'milage',
                     data: data.map((month) => month.actual),
                     backgroundColor: [
                         "red"
                     ],
                     borderColor: "red",
-                    borderWidth: 2
+                    borderWidth: 2,
+                    pointRadius: 0
                 },
                 {
                     label: "Percentage",
-                    yAxisID: "hr",
+                    yAxisID: "percentage",
                     data: data.map((month) => month.percentage),
-                    borderColor: "Blue",
+                    borderColor: "#0D392E",
                     backgroundColor: [
-                        "Blue"
+                        "#0D392E"
                     ],
-                    borderWidth: 2
+                    borderWidth: 2,
+                    pointRadius: 0
                 }
             ]
         });

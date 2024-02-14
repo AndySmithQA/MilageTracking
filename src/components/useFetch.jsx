@@ -1,10 +1,10 @@
 import {useEffect} from "react";
 
-export default function useFetch(url, initChartData) {
+export default function useFetch(url, supplied) {
 
     useEffect(() => {
         (async function fetchData() {
-        const response = await fetch("http://localhost:3001/months")
+        const response = await fetch(url)
         .catch(error => {
             console.error("[ERROR] Cannot fetch because", error);
             if (error.toString().includes("NetworkError")) {
@@ -17,7 +17,7 @@ export default function useFetch(url, initChartData) {
         if (response.ok) {
             try {
                 const jsonData = await response.json();
-                initChartData(jsonData);
+                supplied(jsonData);
             } catch (e) {
                 console.warn("[WARN] Error while parsing content.  Likely because of empty body.", e);
                 throw new Error("SYSTEM_ERROR");

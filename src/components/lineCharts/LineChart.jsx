@@ -13,23 +13,24 @@ function LineChart({ chartData }) {
             }
           },
           scales: {
-            times:{
+            milage:{
               type: 'linear',
               position: "left",
               title: {
                 display: true,
                 text: "Milage"
               }, 
-              suggestedMax: 10000
+              suggestedMax: 15000
             },
-            hr:{
+            percentage:{
               type: 'linear',
               position: 'right',
               title: {
                 display: true,
                 text: "Percentage"
               },
-              min:10
+              min:10,
+              
             }
           }
         }
