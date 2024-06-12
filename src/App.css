@@ -15,6 +15,11 @@ html, body{
 
 .navbar-custom {
   background-color: var(--secondary);
+  top: 0;
+  width: 100%;
+  position: fixed;
+  
+  
 }
 th, td{
   text-align: center;
@@ -52,5 +57,10 @@ button{
   padding: 10px 20px;
 
 }
+
+h3{
+  padding-top: 100px;
+}
+
 
 
