@@ -1,4 +1,4 @@
-import skoda from '../images/skoda.png'
+import skoda from '../images/Skoda.png'
 
 export default function Navbar(){
     return (
