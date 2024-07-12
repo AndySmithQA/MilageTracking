@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './components/Navbar';
-import BuildTable from './components/table';
+import BuildTable from './components/Table';
 import ShowGraph from './components/lineCharts/BuildGraph';
 import ShowBarGraph from './components/barcharts/BuildBarChart';
 import Input from './components/Input';
