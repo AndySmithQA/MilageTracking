@@ -169,6 +169,16 @@
       "monthlyMilage": 729,
       "maxAllowance": 666,
       "id": 17
+    },
+    {
+      "currentMonth": "Jul-24",
+      "max": 11996,
+      "actual": "11441",
+      "percentage": "95.37",
+      "difference": 555,
+      "monthlyMilage": 510,
+      "maxAllowance": 666,
+      "id": 18
     }
   ]
 }
