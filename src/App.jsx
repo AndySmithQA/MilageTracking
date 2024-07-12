@@ -2,7 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './components/Navbar';
 import BuildTable from './components/Table';
 import ShowGraph from './components/lineCharts/BuildGraph';
-import ShowBarGraph from './components/barcharts/BuildBarChart';
+import ShowBarGraph from './components/barCharts/BuildBarChart';
 import Input from './components/Input';
 import Stats from './components/Stats';
 import './App.css'
