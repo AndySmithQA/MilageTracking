@@ -13,6 +13,11 @@ html, body{
   color: var(--primary);
 }
 
+.reg{
+  font-size: 2em;
+  font-weight: 700;
+}
+
 .navbar-custom {
   background-color: var(--secondary);
   top: 0;
